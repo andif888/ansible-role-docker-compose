@@ -1,9 +1,9 @@
 ---
 # tasks file for ansible-role-docker-compose
 - name: Download and install docker-compose
-    get_url:
-      url: '{{ docker_compose_download_url }}'
-      dest: '{{ docker_compose_install_dir }}/{{ docker_compose_filename }}'
-      owner: '{{ docker_compose_file_owner }}'
-      group: '{{ docker_compose_file_group }}'
-      mode: '{{ docker_compose_file_mode }}'
+  get_url:
+    url: '{{ docker_compose_download_url }}'
+    dest: '{{ docker_compose_install_dir }}/{{ docker_compose_filename }}'
+    owner: '{{ docker_compose_file_owner }}'
+    group: '{{ docker_compose_file_group }}'
+    mode: '{{ docker_compose_file_mode }}'
